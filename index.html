@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+    <Title>My Bio Page</Title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            overflow-y: scroll; 
+            overflow-x:hidden;
+        }
+
+        h2 {
+            padding: 20px 0px 15px 0px;
+            color: White;
+        }
+
+        p {
+            margin: 10px 0px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 9 px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .main-body-container {
+            background-image: url('./img/bg_background.jpg');
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: cover;
+        }
+
+        .main-header,
+        .main-footer {
+            height: 75px;
+            width: 100vw;
+            background-color: black;
+        }
+
+        .logo-text {
+            display: block;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .main-container {
+            height: calc(100vh -150px);
+            width: 90vw;
+            margin: 0px auto;
+        }
+
+        .top-section {
+            width: 100%;
+            background-color: transparent;
+            height: 210px;
+            margin: 10px 0px;
+            overflow: hidden;
+        }
+
+        .top-inner-section {
+            overflow: auto;
+        }
+
+        .bottom-section {
+            width: 100%;
+            height: 70%;
+        }
+
+        .sidebar {
+            width: 15%;
+            background-color: rgba(0, 0, 0, 0.884);
+            height: 100%;
+            float: left;
+        }
+
+        .gallery {
+            height: 100%;
+            margin-left: 15%;
+            padding: 0px 1em;
+            overflow: auto;
+        }
+
+        .pic-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .pic-container>img {
+            object-fit: cover;
+            display: block;
+            width: 190px;
+            margin: 10px;
+        }
+
+        .sidebar>ul {
+            list-style-type: none;
+        }
+
+        .sidebar>ul>li>a {
+            padding: 15px 20px;
+            display: block;
+            background-color: transparent;
+            border: 1px solid red;
+            transition-duration: .5s;
+        }
+
+        .sidebar>ul>li a:hover {
+            background-color: transparent;
+        }
+
+        .gallery-container {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .gallery-container>li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .gallery-container>li>img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .footer-text {
+            text-align: center;
+            display: block;
+            padding: 20px;
+            color: White;
+        }
+    </style>
+
+    <Head>
+
+    <Body class="main-body-container">
+        <header class="main-header">
+            <span class="logo-text">
+                Jesus Zavala
+            </span>
+        </header>
+        <section class="main-container">
+            <div class="top-section">
+                <div class="top-inner-section">
+                    <div class="pic-container">
+                        <img src="./img/avatar.jpg" class="bio-image" alt="my pic">
+                    </div>
+                    <div class="bio-description">
+                        <h2>About me?</h2>
+                        <p>My name is Jesus Zavala. I am currently attending CSU Fresno. I am majoring in
+                            Business
+                            Administration with the option of Computer Information Systems. </p>
+                        <p>
+                            I would consider myself a car enthusiast. I am really a big fan of GM cars, espcially those
+                            with
+                            V8 engines. I hope to one day own a 2019 Corvette ZR1 which is a track focused car that can
+                            driven on the road and also does 0-60mph in 2.7 seconds. My dream car however, is a
+                            Cadillac CTS-V Sedan. You can think of this car as four-door Corvette with the luxury of a
+                            Cadillac. It comes the same engine as a C7 ZO6 Corvette, a V8 6.2L supercharged engine (LT4). 
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Bottom-section">
+                <aside class="sidebar">
+                    <ul class="list">
+                        <li>
+                            <a href="https://www.chevrolet.com/performance/crate-engines" Target="_blank">GM Crate
+                                Engines</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cadillac.com/v-series" Target="_blank">Cadillac V-Series</a>
+                        </li>
+                        <li>
+                            <a href="https://www.texas-speed.com/" Target="_blank">Texas Speed and Performance</a>
+                        </li>
+                        <li>
+                            <a href="https://www.chevrolet.com/performance/corvette-zr1-supercar" Target="_blank">Corvette
+                                ZR1</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cadillac.com/v-series/cts-v-sedan" Target="_blank">Cadillac CTS-V</a>
+                        </li>
+
+                    </ul>
+                </aside>
+                <div class="gallery">
+                    <h2>Gallery</h2>
+                    <ul class=gallery-container>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/ls1.jpg" class="LS1" alt="LS1-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LS2.jpg" class="LS2" alt="LS2-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LS3.jpg" class="LS3" alt="LS3-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LS4.jpg" class="LS4" alt="LS4-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LS7.jpg" class="LS7" alt="LS7-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LS9.jpg" class="LS9" alt="LS9-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LSA.jpg" class="LSA" alt="LSA-Crate-Engine">
+                        </li>
+                        <li class="gallery-item box-shadow grow">
+                            <img src="./img/LT4.jpg" class="LT4" alt="LT4-Crate-Engine">
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+        <Footer class="main-footer">
+            <span class="footer-text">Copyright (C) 2019. Created by Jesus Zavala</span>
+        </Footer>
+    </Body>
+
+</html>
