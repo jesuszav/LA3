@@ -10,7 +10,12 @@ body {
     widows: 100wh;
 
 }
-
+.sub-heading, .nav-heading{
+    margin: 10px 0px 15px;
+}
+.nav-heading{
+    text-align: center;
+}
 .main-container-grid {
     display: grid;
     grid-template-rows: 1fr 13fr 1fr;
@@ -22,7 +27,9 @@ body {
     margin-left: 2px;
 }
 
-.left-nav {}
+.left-nav {
+    list-style-type: none;
+}
 
 .left-nav>li {
     border: #F1F1F1;
@@ -31,8 +38,13 @@ body {
 .left-nav>li>a {
     display: block;
     padding: 15px;
+    text-decoration: none;
+    transition-duration: .7s;
+    font-weight: bold;
 }
-
+.left-nav>li>a:hover{
+    background-color: blue;
+}
 .r1,
 .r3 {
     background-color: #CCC;
@@ -55,6 +67,9 @@ body {
 .r2c1,
 .r2c3 {
     background-color: #CCC;
+}
+.r2c3{
+    padding: 0px 15px 10px;
 }
 .course-table{
     table-layout: fixed;
@@ -81,3 +96,7 @@ body {
     align-self: center;
     justify-self: center;
 }
+.box-shadow {
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 9 px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
