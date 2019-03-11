@@ -7,24 +7,26 @@
 html,
 body {
     height: 100vh;
-    widows: 100wh;
+    width: 100vw;
 
 }
 .sub-heading, .nav-heading{
     margin: 10px 0px 15px;
-}
-.nav-heading{
     text-align: center;
 }
 .main-container-grid {
     display: grid;
     grid-template-rows: 1fr 13fr 1fr;
     grid-row-gap: 1em;
+    background-image: url('../img/bg_background2.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 .logo-name {
     line-height: 50px;
-    margin-left: 2px;
+    margin-left: 15px;
 }
 
 .left-nav {
@@ -32,7 +34,7 @@ body {
 }
 
 .left-nav>li {
-    border: #F1F1F1;
+    border: 1px solid #F1F1F1;
 }
 
 .left-nav>li>a {
@@ -43,7 +45,7 @@ body {
     font-weight: bold;
 }
 .left-nav>li>a:hover{
-    background-color: blue;
+    background-color: silver;
 }
 .r1,
 .r3 {
@@ -51,7 +53,7 @@ body {
 }
 
 .r2 {
-    background-color: #F1F1F1;
+    background-color: rgba(155, 155, 155, 0.815);
     width: 90%;
     margin: 0px auto;
 }
@@ -84,13 +86,16 @@ body {
     
 }
 .course-table>tbody>tr>td{
-    border: 1px solid #a6a6e9;            
+    border: 1px solid #000000;            
 }
 .course-table>thead>tr>td{
     border: 1px solid #AAA;
     font-weight: bold;
     font-size: 18px;
-    background-color: rgb(144, 218, 144);
+    background-color: rgba(255, 0, 0, 0.897);
+}
+td{
+    padding: 10px;
 }
 .copyright-text{
     align-self: center;
@@ -100,3 +105,4 @@ body {
     -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 1px 9 px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
